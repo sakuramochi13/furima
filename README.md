@@ -46,8 +46,6 @@ docker-compose exec php bash
 cd /var/www
 ```
 
-`cp .env.example .env`
-
 ### 3-1. Composer インストール
 
 ```bash
