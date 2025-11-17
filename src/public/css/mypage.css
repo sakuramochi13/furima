@@ -1,0 +1,144 @@
+
+.mypage-container {
+    width: 100%;
+    height: 150%;
+    margin: 50px auto 0;
+    display: flex;
+    justify-content: center;
+}
+
+.mypage-left,
+.mypage-middle,
+.mypage-right {
+    display: flex;
+    align-items: center;
+    width: 25%;
+}
+
+.mypage-left {
+    justify-content: center;
+}
+
+.mypage-middle {
+    text-align: left;
+}
+
+.mypage-left__img {
+    width: 140px;
+    height: 140px;
+    background-color: #e5e5e5;
+    border-radius: 50%;
+    border: none;
+    object-fit: cover;
+}
+
+.mypage-middle__name {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.mypage-right__btn {
+    margin-left: auto;
+    width: 200px;
+    height: 38px;
+    background-color: #ffffff;
+    font-size: 18px;
+    color: #f75556;
+    font-weight: bolder;
+    border: 2px solid #f75556;
+    border-radius: 5px;
+    text-decoration: none;
+    white-space: nowrap;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mypage-menu {
+    height: 70px;
+    border-bottom: 1px solid #5f5f5f;
+    display: flex;
+    align-items: flex-end;
+}
+
+.mypage-menu__listed {
+    margin-left: 10%;
+    color: #5f5f5f;
+    font-weight: bold;
+}
+
+.mypage-menu__bought {
+    margin-left: 40px;
+        color: #5f5f5f;
+        font-weight: bold;
+}
+
+.menu-effect {
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.mypage-menu__listed.is-active,
+.mypage-menu__bought.is-active {
+    color: #f60e02;
+}
+
+
+.card {
+    width: 220px;
+    margin: 30px 0 0 30px;
+    overflow: hidden;
+    background-color: #fff;
+    display: inline-block;
+    position: relative;
+}
+
+.card-img img{
+    width: 220px;
+    height: 198px;
+    background-color: #d9d9d9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.card-img__panel {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card__sold-tag {
+    position: absolute;
+    top: 10px;
+    right: -35px;
+    background-color: #c0392b;
+    color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 5px 40px;
+    text-align: center;
+    transform: rotate(45deg);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    z-index: 3;
+    letter-spacing: 1px;
+}
+
+.card__content {
+    height: 30px;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.card__content--product-name {
+    color: #5f5f5f;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    justify-content: center;
+}

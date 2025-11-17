@@ -1,0 +1,231 @@
+
+.main-container {
+    width: min(94vw, 1200px);
+    display: flex;
+    align-items: flex-start;
+    gap: clamp(16px, 3vw, 40px);
+    margin: clamp(24px, 4vw, 60px) auto;
+    box-sizing: border-box;
+}
+
+@media screen and (max-width: 720px) {
+    .main-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.main-group {
+    flex: 1 1 clamp(520px, 50vw, 720px);
+    min-width: clamp(320px, 48vw, 720px);
+}
+
+.buy-group {
+    flex: 0 0 clamp(320px, 32vw, 420px);
+    min-width: clamp(300px, 30vw, 420px);
+}
+
+@media screen and (max-width: 720px) {
+    .buy-group {
+        width: 60%;
+        min-width: 420px;
+    }
+
+    .main-group {
+        min-width: 420px;
+    }
+}
+
+.top-section,
+.middle-section,
+.bottom-section {
+    border-bottom: 1px solid #000000;
+}
+
+.top-section {
+    display: flex;
+    gap: clamp(16px, 2.5vw, 30px);
+    padding: 0 0 clamp(16px, 3vw, 30px) 0;
+}
+
+.top-section__img {
+    width: clamp(100px, 10vw, 140px);
+}
+
+.top-section__img--size {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.top-section__contents {
+    margin-left: 0;
+}
+
+.top-section__contents--name {
+    margin: 0 0 clamp(6px, 1.2vw, 12px) 0;
+    font-size: clamp(18px, 2vw, 24px);
+    line-height: 1.35;
+}
+
+.top-section__contents--price {
+    margin: 0;
+    font-size: clamp(16px, 1.8vw, 22px);
+    line-height: 1.2;
+}
+
+.top-section__contents--price::before {
+    content: "¥";
+    font-size: clamp(14px, 1.6vw, 18px);
+}
+
+.middle-section,
+.bottom-section {
+    padding: clamp(14px, 2.5vw, 24px);
+}
+
+.middle-section__payment {
+    margin: 0 0 clamp(12px, 2vw, 20px);
+    font-size: clamp(14px, 1.5vw, 18px);
+}
+
+
+.payment-form__method {
+    margin-left: clamp(12px, 3vw, 40px);
+}
+
+.payment-form__method--select {
+    width: clamp(200px, 22vw, 280px);
+    height: clamp(28px, 3.2vw, 40px);
+    font-size: clamp(14px, 1.3vw, 16px);
+    border: 1px solid #5f5f5f;
+    border-radius: 4px;
+    padding: 0 clamp(8px, 1vw, 12px);
+    box-sizing: border-box;
+    background: #fff;
+    display: flex;
+    align-items: center;
+}
+
+.message {
+    width: clamp(220px, 24vw, 320px);
+    height: clamp(22px, 2.8vw, 30px);
+    padding: 3px 0 3px clamp(12px, 1.8vw, 20px);
+    box-sizing: border-box;
+}
+
+.message-error {
+    margin: 0;
+    font-size: clamp(12px, 1.2vw, 14px);
+    color: #ff5555;
+}
+
+.bottom-section__shipping {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: clamp(8px, 1.2vw, 12px);
+}
+
+.bottom-section__shipping--label {
+    margin: 0 0 clamp(12px, 2vw, 20px);
+    font-size: clamp(14px, 1.5vw, 18px);
+}
+
+.bottom-section__shipping--update {
+    font-size: clamp(14px, 1.4vw, 16px);
+    text-decoration: none;
+    color: #0173cc;
+    white-space: nowrap;
+}
+
+.bottom-section__destination {
+    margin-left: clamp(12px, 3vw, 40px);
+}
+
+.bottom-section__destination--postal-code {
+    margin: 0 0 clamp(4px, 0.8vw, 6px);
+    font-size: clamp(12px, 1.2vw, 14px);
+}
+
+.bottom-section__destination--postal-code::before {
+    content: "〒 ";
+    font-size: inherit;
+}
+
+.bottom-section__destination--address,
+.bottom-section__destination--building {
+    margin: 0;
+    font-size: clamp(14px, 1.5vw, 16px);
+    line-height: 1.5;
+}
+
+.buy-table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    font-size: clamp(14px, 1.4vw, 16px);
+}
+
+.buy-table__tr {
+    height: clamp(60px, 6.5vw, 80px);
+    border: 1px solid #333;
+}
+
+.buy-table__th,
+.buy-table__td {
+    width: 50%;
+    text-align: center;
+    vertical-align: middle;
+    padding: clamp(8px, 1.2vw, 12px);
+    box-sizing: border-box;
+    font-weight: normal;
+}
+
+.buy-label {
+    font-size: clamp(13px, 1.3vw, 15px);
+}
+
+.buy-price {
+    font-size: clamp(16px, 1.8vw, 20px);
+}
+
+.buy-price::before {
+    content: "¥";
+    font-size: clamp(14px, 1.6vw, 18px);
+}
+
+.buy-payment {
+    font-size: clamp(14px, 1.5vw, 16px);
+}
+
+.buy-btn {
+    margin: clamp(24px, 3.5vw, 40px) 0 0;
+    width: 100%;
+    height: clamp(38px, 3.8vw, 48px);
+    background-color: #f75556;
+    font-size: clamp(16px, 1.6vw, 18px);
+    color: #ffffff;
+    font-weight: 600;
+    /* 修正: px ではなく数値 */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color .3s ease, transform .2s ease;
+}
+
+select,
+::picker(select) {
+    appearance: base-select;
+}
+
+::picker(select) {
+    color: #ffffff;
+    background: #636769;
+    border-radius: 4px;
+}
+
+option:hover {
+    background: #5599eb;
+    border-radius: 4px;
+}

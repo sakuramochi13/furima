@@ -1,0 +1,23 @@
+# --- Laravel (src 配下) ---
+src/vendor/
+src/node_modules/
+src/.env
+src/.env.backup
+src/.env.testing
+src/storage/*.key
+src/public/storage
+src/.phpunit.result.cache
+
+# --- Docker ---
+docker/mysql/data/
+
+# --- IDE / エディタ ---
+.idea/
+.vscode/
+
+# --- その他 ---
+npm-debug.log
+yarn-error.log
+docker-compose.override.yml
+Homestead.json
+Homestead.yaml
